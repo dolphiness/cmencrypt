@@ -1,0 +1,19 @@
+{
+    "name": "stardust-phplib/crypt",
+    "description": "stardust通用签名、加密",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "maibolang",
+            "email": "maibolang@starduststudio.cn"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Stardust\\crypt\\": "src/"
+        }
+    }
+}
