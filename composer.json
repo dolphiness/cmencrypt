@@ -1,5 +1,5 @@
 {
-    "name": "stardust-phplib/crypt",
+    "name": "stardust-phplib/cmencrypt",
     "description": "stardust通用签名、加密",
     "type": "library",
     "license": "MIT",
