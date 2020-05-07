@@ -5,7 +5,7 @@
 a.
 composer.json添加
 "require": {
-    "stardust-phplib/cmencrypt": "1.2"
+    "stardust-phplib/cmencrypt": "dev-mbl"
 }
 
 b.
@@ -14,8 +14,8 @@ composer require stardust-phplib/cmencrypt
 ```
 
 ## 初始化使用
-秘钥请到config/key.php里配置
-####laravel
+复制vendor\stardust-phplib\cmencrypt\src\config\key.php到根目录config文件夹下
+#### laravel
 1.添加服务，到 config/app.php的providers添加一行
 ```php
 Stardust\crypt\CmencryptServiceProvider::class
@@ -24,7 +24,7 @@ Stardust\crypt\CmencryptServiceProvider::class
 ```php
 'Cmencrypt' => Stardust\crypt\Facades\Cmencrypt::class
 ```
-####lumen
+#### lumen
 1.添加服务，到bootstrap/app.php下添加一行
 ```php
 $app->register(Stardust\crypt\CmencryptServiceProvider::class)
